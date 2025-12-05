@@ -1,0 +1,182 @@
+.postlist-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.postlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.postlist-add-btn {
+  background: #4f46e5;
+  padding: 10px 16px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.postlist-add-btn:hover {
+  background: #4338ca;
+}
+
+.postlist-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.postlist-table thead {
+  background: #f3f4f6;
+}
+
+.postlist-table th,
+.postlist-table td {
+  padding: 14px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.postlist-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* ---------------------------- */
+/*   ACTION BUTTONS (SEJAJAR)   */
+/* ---------------------------- */
+
+.action-buttons {
+  display: flex;        /* Bikin sejajar */
+  align-items: center;
+  gap: 8px;             /* Jarak antar tombol */
+}
+
+/* Button Edit */
+.btn-edit {
+  background: #2563eb;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.btn-edit:hover {
+  background: #1d4ed8;
+}
+
+/* Button Delete */
+.btn-delete {
+  background: #dc2626;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.btn-delete:hover {
+  background: #b91c1c;
+}
+
+
+.postlist-refresh-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+  margin-right: 10px;
+}
+
+.postlist-refresh-btn:hover {
+  background: #2563eb;
+}
+
+.postlist-refresh-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Container untuk tombol-tombol aksi di header */
+.postlist-actions {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Skeleton Loading Styles */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton-id {
+  width: 40px;
+  height: 20px;
+  margin: 8px 0;
+}
+
+.skeleton-text {
+  width: 120px;
+  height: 20px;
+  margin: 8px 0;
+}
+
+.skeleton-content {
+  width: 200px;
+  height: 20px;
+  margin: 8px 0;
+}
+
+.skeleton-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.skeleton-btn {
+  width: 50px;
+  height: 30px;
+  border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skeleton-text {
+    width: 80px;
+  }
+  
+  .skeleton-content {
+    width: 150px;
+  }
+}

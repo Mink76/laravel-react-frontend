@@ -1,0 +1,13 @@
+/* Reset bawaan biar tampilan rapi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #f5f6fa;
+  color: #2f3640;
+  padding: 20px;
+}
